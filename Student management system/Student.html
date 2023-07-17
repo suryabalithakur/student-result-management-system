@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <style>
+    .box h2 {
+      color: black;
+      font-family: cursive;
+    }
+    .dropdown-item{
+    background-color:#5f1782;
+  }
+  .dropdown-item:hover{
+    background-color: red;
+  }
+    .products {
+      /* display: flex; */
+      /* display: inline-block; */
+      margin-left: 1.5rem;
+    }
+
+    .card {
+      width: 50%;
+      margin: 2rem;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      z-index:1;
+    }
+
+
+
+
+    .btn {
+      box-shadow: none !important;
+      color: white;
+      color: #fff !important;
+      font-weight: 600;
+      margin: 0px;
+      padding:0px;
+      margin-top: 7px;
+      text-align: center;
+    }
+    .btn:hover{
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <img src="http://www.sts-school.edu.in/wp-content/uploads/2019/10/Best-School-in-Meerut-1.png" alt="" id="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="student.html">HOME</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li> -->
+            <li class="nav-item">
+
+
+              <!-- for contact code -->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                CONTACT US
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="contact-clean">
+                        <form onsubmit="">
+                          <h2 class="text-center">Contact us</h2>
+                          <div class="form-group"><input class="form-control" type="text" name="name"
+                              placeholder="Name"></div>
+                          <div class="form-group"><input class="form-control" type="email" name="email"
+                              placeholder="Email"></div>
+                          <div class="form-group"><textarea class="form-control" name="message" placeholder="Message"
+                              rows="14"></textarea></div>
+                          <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                SIGN IN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dp">
+                <li class="drop"><a class="dropdown-item" href="#">ADMIN</a></li>
+                <li class="drop"><a class="dropdown-item" href="#">FACULTY</a></li>
+                <li class="drop"><a class="dropdown-item" href="#">STUDENT</a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="studentlogin.php">SIGN IN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.php">SIGN UP</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="banner">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active text-center">
+          <img src="https://wallpaperaccess.com/full/3901901.jpg" class="d-block w-100" alt="...">
+          <div class="line text-center">
+            <p>“Success is not the key to happiness. Happiness is the key to success. If you love what you are doing,
+              you will be successful.” </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://swall.teahub.io/photos/small/67-673750_students-wallpapers-c347o4h-campus-happy-college-students.jpg"
+            class="d-block w-100" alt="...">
+          <div class="line">
+            <p>“Success isn’t about how much money you make. It’s about the difference you make in people’s lives.” </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpaperaccess.com/full/1644067.jpg" class="d-block w-100" alt="...">
+          <div class="line">
+            <p>“The difference between a successful person and others is not a lack of strength, not a lack of
+              knowledge, but rather a lack in will.” </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section>
+      <section class="footer">
+        <img
+          src="https://img.freepik.com/free-vector/vector-abstract-colorful-flowing-wave-lines-background-design-element-presentation-website-template_440066-495.jpg"
+          class="d-block w-100" alt="...">
+        <div class="container-fluid">
+          <div class="box">
+            <h2 style="text-align: center;padding: 20px;">WELCOME TO RESULT MANAGEMENT SYSTEM</h2>
+            <div class="products">
+              <h4 style="margin-left:32px;">PRODUCT</h4>
+              <div class="card">
+                <div class="card-body">
+                  <span>Pre-School Management Software</span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <span>School Result Management Software</span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <span>Coaching Result Management Software</span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <span>College Result Management Software</span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <span>University Result Management Software</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/></a>
+      <a href="#"><img src="https://img.icons8.com/material-sharp/24/000000/mail.png"/></a>
+      <a href="#"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"/></a>
+    </section>
+  </div>
+
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="#"></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+
+</html>
