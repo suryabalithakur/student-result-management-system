@@ -2,7 +2,7 @@
     $servername="localhost";
 	$username = "root";
 	$password="";
-	$database = "mfgi";
+	$database = "mefgi";
 	$con = mysqli_connect($servername,$username,$password,$database);
 
     session_start();
