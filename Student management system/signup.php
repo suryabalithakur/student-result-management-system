@@ -1,18 +1,18 @@
 <?php
- $serverName = "localhost";
- $userName = "root";
- $password = "";
- $database = "mfgi";
- $con = mysqli_connect($serverName,$userName,$password,$database);
-
+ $serverName = "Admin";  
+ $userName = "Admin"; 
+ $password = "Admin"; 
+ $database = "mfgi";                                                   
+ $con = mysqli_connect($serverName,$userName,$password,$database);  
+ 
 	if($_SERVER['REQUEST_METHOD']=='POST')
 	   {
-		   $fName = $_POST['FirstName'];
-		   $lName = $_POST['secondName'];
-		   $address = $_POST['Address'];
-		   $Email = $_POST['Email'];
-		   $pass = $_POST['Pass'];
-		   $role = $_POST['role'];  
+		   $fName = $_POST['FirstName']; 
+		   $lName = $_POST['secondName']; 
+ 		   $address = $_POST['Address']; 
+		   $Email = $_POST['Email']; 
+		   $pass = $_POST['Pass']; 
+		   $role = $_POST['role'];   
 		   $sql = "INSERT INTO `registration` (`sid`, `FirstName`, `LastName`, `Address`, `Email`, `Password`, `role`) VALUES (NULL, '$fName', '$lName', '$address', '$Email', '$pass', '$role')";
 		    $result =mysqli_query($con,$sql);
         if($result){
